@@ -6,4 +6,10 @@ tasks:
 - id: 2
   title: drink coffee
   description: need CAFFEEINNNNEAE
-total: 2
+- id: 3
+  title: trying this out
+  description: hi there
+- id: 4
+  title: eat hummus
+  description: do it now!
+total: 4

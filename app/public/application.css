@@ -1,0 +1,161 @@
+body {
+  max-width: 1000px;
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #d3d3d3;
+}
+
+.container {
+  display: block;
+  align: center;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  color: black;
+  background-color:white;
+}
+
+nav {
+  width: auto;
+  background-color: grey;
+  padding:5px;
+  border-radius: 10px;
+}
+
+nav li {
+  display: inline;
+  padding-right: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+nav li a{
+  color: #ffffff;
+}
+
+nav li a:hover{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#head {
+  text-align: center;
+  margin:20px;
+  padding:20px 0 0 0;
+}
+
+.tasks {
+  display: inline;
+  margin: 0px 0px 20px 0px;
+  background-color: #e8e8ee;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.task {
+  display: block;
+  margin: 0px 0px 20px 0px;
+  background-color: #e8e8ee;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  text-align: center;
+  color: #000000;
+}
+
+.task:hover{
+  background-color: #ffffff;
+}
+
+.frontpage {
+  margin: 0 auto;
+  width: 100%;
+  display:inline;
+  text-align: center;
+  font-size: 1.2em;
+  }
+
+.frontpage li{
+  display:block;
+  color: #000000;
+}
+
+.frontpage li:hover{
+  color: #000000;
+  background-color:white;
+}
+
+.frontpage:after {
+  display: block;
+  clear: both;
+}
+
+#new-task {
+  display:block;
+  text-align: center;
+}
+
+#new-task h3 {
+  font-size: 1.5em;
+}
+
+#new-task input {
+  font-family: Helvetica, Arial, sans-serif;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#task-name {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#submit-btn {
+  font-size: 1em;
+  margin: 10px;
+  padding:15px 15px;
+  border:0 none;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#submit-btn:hover{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.75em;
+  right:0;
+  height:80px;
+  margin:20px;
+  position:relative;
+  bottom: 0;
+}
