@@ -48,6 +48,12 @@ nav li a:hover{
   border-radius: 10px;
 }
 
+#task-header {
+  font-weight:bold;
+  float:right;
+  font-size: 1.2em;
+}
+
 h1 {
   text-align: center;
 }
@@ -147,13 +153,13 @@ textarea {
   font-size: 1em;
   padding: 10px;
   border-radius: 10px;
-  
+
 }
 
 footer {
   padding: 20px;
   font-size: 0.75em;
-  right:0;
+  float:right;
   height:80px;
   margin:20px;
   position:relative;
