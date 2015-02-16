@@ -14,7 +14,17 @@
     </ul>
   </nav>
   <div class="container">
-    <%= yield %>
+    <h1>All Tasks</h1>
+
+<div class="task"
+  <h3><a href="/tasks/1">1. a title</a></h3>
+  <a href="/tasks/1/edit"><p>Edit</p></a>
+  <form action="/tasks/1" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit" value="delete">Delete</button>
+  </form>
+</div>
+
   </div>
 
   <footer>

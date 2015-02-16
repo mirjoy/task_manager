@@ -14,7 +14,13 @@
     </ul>
   </nav>
   <div class="container">
-    <%= yield %>
+    <form action="/tasks" method="post" id="new-task">
+  <h3>Enter a new task:</h3>
+  <input  type='text' name='task[title]' placeholder="Task Name" id="task-name"/><br/>
+  <textarea name='task[description]' placeholder="Task Details"></textarea><br/>
+  <button type='submit' id="submit-btn">Make a task!</button>
+</form>
+
   </div>
 
   <footer>
