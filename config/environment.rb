@@ -1,8 +1,10 @@
+# require your gems
 require 'bundler'
 Bundler.require
 
 # set the pathname for the root of the app
 require 'pathname'
+
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 # require the controller(s)
@@ -11,20 +13,14 @@ Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
 # require the model(s)
 Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
 
-# configure TaskManagerApp settings
-class TaskManagerApp < Sinatra::Base
+# require your database configurations
+
+require APP_ROOT.join('config', 'database')
+# configure Server settings
+
+class TaskManager < Sinatra::Base
   set :method_override, true
   set :root, APP_ROOT.to_path
-  set :views, File.join(TaskManagerApp.root, "app", "views")
-  set :public_folder, File.join(TaskManagerApp.root, "app", "public")
-
-  configure :test do
-    set :database, File.join(TaskManagerApp.root, "db", "task_manager_test.sqlite3")
-    set :environment, :test
-  end
-
-  configure :development do
-    set :database, File.join(TaskManagerApp.root, "db", "task_manager.sqlite3")
-    set :environment, :development
-  end
+  set :views, File.join(TaskManager.root, "app", "views")
+  set :public_folder, File.join(TaskManager.root, "app", "public")
 end
